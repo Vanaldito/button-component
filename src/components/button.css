@@ -1,6 +1,9 @@
 .button {
   font-size: 1.5rem;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 
 .button--variant-default {

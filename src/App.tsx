@@ -6,11 +6,21 @@ export default function App() {
   return (
     <main>
       <div className="buttons">
-        <Button disabled={false} disableShadow={false} variant="outline">
-          Enabled
+        <Button
+          startIcon="local_grocery_store"
+          disabled={false}
+          disableShadow={false}
+          variant="outline"
+        >
+          StartIcon
         </Button>
-        <Button disabled={true} disableShadow={true} variant="outline">
-          Disabled
+        <Button
+          endIcon="local_grocery_store"
+          disabled={true}
+          disableShadow={true}
+          variant="outline"
+        >
+          EndIcon
         </Button>
       </div>
     </main>

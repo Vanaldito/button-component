@@ -32,3 +32,12 @@
 .button--disable-shadow {
   box-shadow: none;
 }
+
+.button--disabled {
+  color: #9e9e9e;
+  cursor: not-allowed;
+}
+
+.button--variant-outline.button--disabled {
+  border-color: #9e9e9e;
+}

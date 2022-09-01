@@ -6,11 +6,11 @@ export default function App() {
   return (
     <main>
       <div className="buttons">
-        <Button disableShadow={false} variant="default">
-          EnableShadow
+        <Button disabled={false} disableShadow={false} variant="outline">
+          Enabled
         </Button>
-        <Button disableShadow={true} variant="default">
-          DisableShadow
+        <Button disabled={true} disableShadow={true} variant="outline">
+          Disabled
         </Button>
       </div>
     </main>

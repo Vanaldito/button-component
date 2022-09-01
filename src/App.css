@@ -7,3 +7,10 @@
 html {
   font-size: 10px;
 }
+
+.buttons {
+  display: flex;
+  max-width: 100%;
+  padding: 20px;
+  gap: 20px;
+}

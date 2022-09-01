@@ -1,7 +1,26 @@
 .button {
+  font-size: 1.5rem;
+}
+
+.button--variant-default {
   padding: 8px 16px;
-  font-size: 1.4rem;
   border-radius: 6px;
-  border: none;
   background-color: #e0e0e0;
+  color: #000000;
+  border: none;
+  box-shadow: 0px 2px 3px 0px #33333333;
+}
+
+.button--variant-outline {
+  padding: 8px 16px;
+  border: 1px solid #3d5afe;
+  border-radius: 6px;
+  background-color: inherit;
+  color: #3d5afe;
+}
+
+.button--variant-text {
+  background-color: inherit;
+  color: #3d5afe;
+  border: none;
 }

@@ -15,10 +15,8 @@ export default function Button({
 }: ButtonProps) {
   let className = "button";
   className += ` button--variant-${variant}`;
-  className += disableShadow
-    ? " button--disable-shadow"
-    : " button--enable-shadow";
-  className += disabled ? " button--disabled" : " button-enabled";
+  className += disableShadow ? " button--disable-shadow" : "";
+  className += disabled ? " button--disabled" : "";
 
   return (
     <button className={className} type="button">

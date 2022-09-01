@@ -9,9 +9,6 @@
   background-color: #e0e0e0;
   color: #000000;
   border: none;
-}
-
-.button--variant-default.button--enable-shadow {
   box-shadow: 0px 2px 3px 0px #33333333;
 }
 

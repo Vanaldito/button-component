@@ -2,18 +2,18 @@ import "./button.css";
 import Icon from "./icon";
 
 interface ButtonProps {
-  variant: "default" | "outline" | "text";
-  disableShadow: boolean;
-  disabled: boolean;
+  variant?: "default" | "outline" | "text";
+  disableShadow?: boolean;
+  disabled?: boolean;
   startIcon?: string;
   endIcon?: string;
   children: React.ReactNode;
 }
 
 export default function Button({
-  variant,
-  disableShadow,
-  disabled,
+  variant = "default",
+  disableShadow = false,
+  disabled = false,
   startIcon,
   endIcon,
   children,

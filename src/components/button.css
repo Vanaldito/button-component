@@ -8,6 +8,9 @@
   background-color: #e0e0e0;
   color: #000000;
   border: none;
+}
+
+.button--variant-default.button--enable-shadow {
   box-shadow: 0px 2px 3px 0px #33333333;
 }
 
@@ -23,4 +26,8 @@
   background-color: inherit;
   color: #3d5afe;
   border: none;
+}
+
+.button--disable-shadow {
+  box-shadow: none;
 }

@@ -7,24 +7,48 @@
   height: max-content;
 }
 
+.button--color-default {
+  --color-1: #3f3f3f;
+  --color-2: #e0e0e0;
+  --shadow-color: #33333333;
+}
+
+.button--color-primary {
+  --color-1: #ffffff;
+  --color-2: #2962ff;
+  --shadow-color: #2962ff33;
+}
+
+.button--color-secondary {
+  --color-1: #ffffff;
+  --color-2: #455a64;
+  --shadow-color: #455a6433;
+}
+
+.button--color-danger {
+  --color-1: #ffffff;
+  --color-2: #d32f2f;
+  --shadow-color: #d32f2f33;
+}
+
 .button--variant-default {
   border-radius: 6px;
-  background-color: #e0e0e0;
-  color: #000000;
+  color: var(--color-1);
+  background-color: var(--color-2);
   border: none;
-  box-shadow: 0px 2px 3px 0px #33333333;
+  box-shadow: 0px 2px 3px 0px var(--shadow-color);
 }
 
 .button--variant-outline {
-  border: 1px solid #3d5afe;
+  border: 1px solid var(--color-2);
   border-radius: 6px;
   background-color: inherit;
-  color: #3d5afe;
+  color: var(--color-2);
 }
 
 .button--variant-text {
   background-color: inherit;
-  color: #3d5afe;
+  color: var(--color-2);
   border: none;
 }
 
@@ -33,12 +57,14 @@
 }
 
 .button--disabled {
-  color: #9e9e9e;
+  --color-1: #afafaf;
+  --color-2: #d0d0d0;
   cursor: not-allowed;
 }
 
-.button--variant-outline.button--disabled {
-  border-color: #9e9e9e;
+.button--variant-outline.button--disabled,
+.button--variant-text.button--disabled {
+  --color-2: #afafaf;
 }
 
 .button--variant-default.button--size-sm,

@@ -6,13 +6,10 @@ export default function App() {
   return (
     <main>
       <div className="buttons">
-        <Button variant="outline" size="sm">
-          Small
-        </Button>
-        <Button variant="outline">Medium</Button>
-        <Button variant="outline" size="lg">
-          Large
-        </Button>
+        <Button>Default</Button>
+        <Button color="primary">Primary</Button>
+        <Button color="secondary">Secondary</Button>
+        <Button color="danger">Danger</Button>
       </div>
     </main>
   );

@@ -8,6 +8,7 @@ interface ButtonProps {
   startIcon?: string;
   endIcon?: string;
   size?: "sm" | "md" | "lg";
+  color?: "default" | "primary" | "secondary" | "danger";
   children: React.ReactNode;
 }
 
@@ -16,6 +17,7 @@ export default function Button({
   disableShadow = false,
   disabled = false,
   size = "md",
+  color = "default",
   startIcon,
   endIcon,
   children,
@@ -25,6 +27,7 @@ export default function Button({
   className += disableShadow ? " button--disable-shadow" : "";
   className += disabled ? " button--disabled" : "";
   className += ` button--size-${size}`;
+  className += ` button--color-${color}`;
 
   return (
     <button className={className} type="button">

@@ -103,7 +103,9 @@
   box-shadow: none;
 }
 
-.button--disabled {
+.button--disabled,
+.button--disabled:hover,
+.button--disabled:focus {
   --default-fg-color: #9f9f9f;
   --default-bg-color: #e0e0e0;
   --default-shadow-color: #9f9f9f33;

@@ -6,10 +6,16 @@ export default function App() {
   return (
     <main>
       <div className="buttons">
-        <Button>Default</Button>
-        <Button color="primary">Primary</Button>
-        <Button color="secondary">Secondary</Button>
-        <Button color="danger">Danger</Button>
+        <Button disabled>Default</Button>
+        <Button disabled color="primary">
+          Primary
+        </Button>
+        <Button disabled color="secondary">
+          Secondary
+        </Button>
+        <Button disabled color="danger">
+          Danger
+        </Button>
       </div>
     </main>
   );

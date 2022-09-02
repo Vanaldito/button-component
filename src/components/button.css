@@ -67,17 +67,17 @@
   --color-2: #afafaf;
 }
 
-.button--variant-default.button--size-sm,
-.button--variant-outline.button--size-sm {
+.button--size-sm,
+.button--size-sm {
   padding: 6px 12px;
 }
 
-.button--variant-default.button--size-md,
-.button--variant-outline.button--size-md {
+.button--size-md,
+.button--size-md {
   padding: 8px 16px;
 }
 
-.button--variant-default.button--size-lg,
-.button--variant-outline.button--size-lg {
+.button--size-lg,
+.button--size-lg {
   padding: 11px 22px;
 }

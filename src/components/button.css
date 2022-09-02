@@ -5,6 +5,7 @@
   align-items: center;
   gap: 5px;
   height: max-content;
+  border-radius: 6px;
 }
 
 .button--color-default {
@@ -18,6 +19,13 @@
   --text-bg-color: #ffffff;
 }
 
+.button--color-default:hover,
+.button--color-default:focus {
+  --default-bg-color: #aeaeae;
+  --outline-bg-color: #3f3f3f1a;
+  --text-bg-color: #3f3f3f1a;
+}
+
 .button--color-primary {
   --default-fg-color: #ffffff;
   --default-bg-color: #2962ff;
@@ -27,6 +35,13 @@
   --outline-border-color: #2962ff;
   --text-fg-color: #2962ff;
   --text-bg-color: #ffffff;
+}
+
+.button--color-primary:hover,
+.button--color-primary:focus {
+  --default-bg-color: #0039cb;
+  --outline-bg-color: #2962ff1a;
+  --text-bg-color: #2962ff1a;
 }
 
 .button--color-secondary {
@@ -40,6 +55,13 @@
   --text-bg-color: #ffffff;
 }
 
+.button--color-secondary:hover,
+.button--color-secondary:focus {
+  --default-bg-color: #1c313a;
+  --outline-bg-color: #455a641a;
+  --text-bg-color: #455a641a;
+}
+
 .button--color-danger {
   --default-fg-color: #ffffff;
   --default-bg-color: #d32f2f;
@@ -51,8 +73,14 @@
   --text-bg-color: #ffffff;
 }
 
+.button--color-danger:hover,
+.button--color-danger:focus {
+  --default-bg-color: #9a0007;
+  --outline-bg-color: #d32f2f1a;
+  --text-bg-color: #d32f2f1a;
+}
+
 .button--variant-default {
-  border-radius: 6px;
   color: var(--default-fg-color);
   background-color: var(--default-bg-color);
   border: none;
@@ -61,7 +89,6 @@
 
 .button--variant-outline {
   border: 1px solid var(--outline-border-color);
-  border-radius: 6px;
   background-color: var(--outline-bg-color);
   color: var(--outline-fg-color);
 }

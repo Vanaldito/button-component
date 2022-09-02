@@ -6,16 +6,7 @@ export default function App() {
   return (
     <main>
       <div className="buttons">
-        <Button disabled>Default</Button>
-        <Button disabled color="primary">
-          Primary
-        </Button>
-        <Button disabled color="secondary">
-          Secondary
-        </Button>
-        <Button disabled color="danger">
-          Danger
-        </Button>
+        <Button onClick={() => alert("Click")}>Click</Button>
       </div>
     </main>
   );

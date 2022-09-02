@@ -2,7 +2,11 @@ import Icon from "./icon";
 
 import "./button.css";
 
-interface ButtonProps {
+interface ButtonProps
+  extends React.DetailedHTMLProps<
+    React.ButtonHTMLAttributes<HTMLButtonElement>,
+    HTMLButtonElement
+  > {
   variant?: "default" | "outline" | "text";
   disableShadow?: boolean;
   disabled?: boolean;
@@ -22,8 +26,12 @@ export default function Button({
   startIcon,
   endIcon,
   children,
+  ...buttonAttributes
 }: ButtonProps) {
-  let className = "button";
+  let className = buttonAttributes.className
+    ? `${buttonAttributes.className} button`
+    : "button";
+
   className += ` button--variant-${variant}`;
   className += disableShadow ? " button--disable-shadow" : "";
   className += disabled ? " button--disabled" : "";
@@ -31,7 +39,7 @@ export default function Button({
   className += ` button--color-${color}`;
 
   return (
-    <button className={className} type="button">
+    <button {...buttonAttributes} className={className} type="button">
       {startIcon && <Icon iconName={startIcon} />}
       {children}
       {endIcon && <Icon iconName={endIcon} />}

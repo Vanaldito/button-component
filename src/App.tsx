@@ -6,8 +6,13 @@ export default function App() {
   return (
     <main>
       <div className="buttons">
-        <Button startIcon="local_grocery_store">StartIcon</Button>
-        <Button endIcon="local_grocery_store">EndIcon</Button>
+        <Button variant="outline" size="sm">
+          Small
+        </Button>
+        <Button variant="outline">Medium</Button>
+        <Button variant="outline" size="lg">
+          Large
+        </Button>
       </div>
     </main>
   );

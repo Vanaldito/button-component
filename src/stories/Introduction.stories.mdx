@@ -1,0 +1,108 @@
+import { Meta } from "@storybook/addon-docs";
+
+<Meta title="Introduction" />
+
+<style>
+  {`
+    .subheading {
+      --mediumdark: '#999999';
+      font-weight: 900;
+      font-size: 13px;
+      color: #999;
+      letter-spacing: 6px;
+      line-height: 24px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+      margin-top: 40px;
+    }
+
+    .list {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+      row-gap: 10px;
+    }
+
+    @media (min-width: 620px) {
+      .list {
+        row-gap: 20px;
+        column-gap: 20px;
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media all and (-ms-high-contrast:none) {
+    .list {
+        display: -ms-grid;
+        -ms-grid-columns: 1fr 1fr;
+        -ms-grid-rows: 1fr 1fr;
+      }
+    }
+
+    .item {
+      display: block;
+      padding: 20px 30px 20px 15px;
+      border: 1px solid #00000010;
+      border-radius: 5px;
+      transition: background 150ms ease-out, border 150ms ease-out, transform 150ms ease-out;
+      color: #333333;
+      display: flex;
+      align-items: flex-start;
+    }
+
+    .item:hover {
+      border-color: #1EA7FD50;
+      transform: translate3d(0, -3px, 0);
+      box-shadow: rgba(0, 0, 0, 0.08) 0 3px 10px 0;
+    }
+
+    .item:active {
+      border-color: #1EA7FD;
+      transform: translate3d(0, 0, 0);
+    }
+
+    .item strong {
+      font-weight: 700;
+      display: block;
+      margin-bottom: 2px;
+    }
+
+    .item span {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  `}
+</style>
+
+# Welcome to Button Component
+
+Button component provides you a very complete and beautiful buttons for your project.
+
+<div className="subheading">Configure</div>
+
+<div className="list">
+  <div className="item">
+    <span>
+      <strong>Select one of the three variants</strong>
+      Select a default, an outline and a text button
+    </span>
+  </div>
+  <div className="item">
+    <span>
+      <strong>Disable the button or the shadow</strong>
+      The button can be disabled!
+    </span>
+  </div>
+  <div className="item">
+    <span>
+      <strong>Select a color</strong>
+      You have four colors to choose
+    </span>
+  </div>
+  <div className="item">
+    <span>
+      <strong>Choose a size</strong>
+      Choose the size of your button, between small, medium and large
+    </span>
+  </div>
+</div>

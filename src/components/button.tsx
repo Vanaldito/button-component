@@ -1,5 +1,6 @@
-import "./button.css";
 import Icon from "./icon";
+
+import "./button.css";
 
 interface ButtonProps {
   variant?: "default" | "outline" | "text";
